@@ -1,4 +1,3 @@
-
 let productosDiv = document.getElementById("productos")
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
@@ -33,9 +32,19 @@ function agregarAlCarrito(e) {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    alert("Agregaste " + productoSeleccionado.nombre + " al carrito")
+    swal({
+        title: "Producto agregado correctamente!",
+        text: "Agregaste " + productoSeleccionado.nombre + " al carrito",
+        icon: "success",
+        button: "Continuar"
+    })
+    
+    Toastify({
+        text: "El carrito contiene " + carrito.length + " productos!",
+        close: true
+    }).showToast()
 }
 
 for (boton of botonAgregar) {
-    boton.addEventListener("click", agregarAlCarrito)
+    boton.addEventListener("click", agregarAlCarrito)  
 }

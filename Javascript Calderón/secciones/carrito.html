@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Finalizar compra</title>
 </head>
 <body>
     <h1>Finalizar compra</h1>
+    
+    <div class="divSeguir">
     <a href="../index.html" class="seguir">Seguir comprando</a>
+    </div>
 
     <section id="carritoSection">
         <div>
@@ -35,10 +39,10 @@
                 <input type="email" placeholder="Mail" id="mail">
                 <input type="text" placeholder="Direccion" id="direccion">
 
-                <input type="number" placeholder="Telefono" id="telefono">
+                <input type="tel" placeholder="Telefono" id="telefono">
                 <input type="submit" value="Terminar compra" id="submit">
             </form>
-            <div id="confirmacion">
+            <div id="finForm">
     
             </div>
         </div>
@@ -46,7 +50,8 @@
 
 </section>
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../scripts/productos.js"></script>
     <script src="../scripts/carrito.js"></script>
 </body>

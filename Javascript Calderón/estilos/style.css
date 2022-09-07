@@ -10,6 +10,10 @@
   background-color: whitesmoke;
 }
 
+body{
+background-color: rgb(231, 156, 106);
+}
+
 h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -46,24 +50,28 @@ h1 {
 .filtro a{
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 30px;
   border: 1px solid;
-  height:40px;
-  background-color: #a2cead;
+  height:30px;
+  background-color: #f1d42b;
   color:black;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   text-decoration:none
 }
 
+.filtro a:hover{
+  background-color: black;
+  color: #f1d42b;
+}
+
 #carritoSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: 2em;
   margin-left: 18em;
   border-top: 2px black solid;
@@ -78,6 +86,7 @@ h1 {
   font-size: 25px;
   color: black;
   letter-spacing: 3px;
+  margin: 20px;
 }
 
 #vaciar {
@@ -88,10 +97,13 @@ h1 {
   background-color: transparent;
   cursor: pointer;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 #vaciar:hover {
   transform: scale(0.98);
+  background-color: black;
+  color: white;
 }
 
 #carritoSection h2 {
@@ -110,13 +122,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
 .agregar {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -125,10 +130,14 @@ h1 {
   background-color: transparent;
   cursor: pointer;
   border-radius: 10px;
+  background-color: #eee091;
+  color:black;
 }
 
 .agregar:hover {
   transform: scale(0.98);
+  background-color: black;
+  color: #eee091;
 }
 
 #carritoSection {
@@ -160,10 +169,14 @@ h1 {
   background-color: transparent;
   cursor: pointer;
   border-radius: 10px;
+  background-color: #eee091;
+  color:black;
 }
 
 #vaciar:hover {
   transform: scale(0.98);
+  background-color: black;
+  color: #eee091;
 }
 
 #carritoSection h2 {
@@ -198,7 +211,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
-  padding: 0.4em 1em 0.4em 1em;
+  padding: 1px;
   background-color: transparent;
   cursor: pointer;
   border-radius: 10px;
@@ -240,9 +253,14 @@ h1 {
   flex-direction: row;
   gap: 4em;
   align-items: center;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
+  width: 1000px;
+  padding: 10px;
+  border: 2px black solid;
+  background-color: rgb(235, 164, 117);
 }
 
 .detalleProd button {
@@ -255,6 +273,7 @@ h1 {
   height: auto;
 }
 
+
 .seguir {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -266,21 +285,24 @@ h1 {
   color: black;
   border-radius: 10px;
   text-decoration: none;
+  margin-left: 20px;
+  background-color: #eee091;
+  color:black;
 }
 
 .seguir:hover {
   background-color: black;
-  color: white;
+  color:#eee091;
 }
 
 
 .checkout {
-  width: 90%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10em;
+  flex-direction:column;
+  align-items:center;
+  gap: 50px;
   margin-top: 3em;
+  border-top: 2px black solid;
   /* justify-content: space-around; */
 }
 
@@ -321,12 +343,17 @@ form {
   text-transform: uppercase;
   font-weight: lighter;
 }
+
+.formulario h2{
+  margin-bottom: 40px;
+}
+
 #form{
   width: 90%;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
-  gap: 2em;
+  gap: 40px;
 }
 
 #form input{
@@ -344,17 +371,17 @@ form {
   text-transform: uppercase;
   font-weight: lighter;
   padding: 0.4em 1em 0.4em 1em;
-  background-color: transparent;
   cursor: pointer;
   border: 1px black solid;
-  color: black;
   border-radius: 10px;
   text-decoration: none;
+  background-color: #eee091;
+  color:black;
 }
 
 #form #submit:hover {
   background-color: black;
-  color: white;
+  color:#eee091;
 }
 
 
@@ -364,12 +391,16 @@ form {
   align-items: center;
 }
 
-#confirmacion{
+#finForm{
   margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#confirmacion{
   border: 1px black solid;
   border-radius: 10px;
   padding: 2em;
+  margin: 50px;
 }
